@@ -1,0 +1,25 @@
+{
+  "name": "blog-widget-nativead",
+  "version": "1.0.0",
+  "description": "Presentacion de los widgets de nativead",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/board-native/blog-widget-nativead.git"
+  },
+  "keywords": [
+    "ad"
+  ],
+  "author": "nativead",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/board-native/blog-widget-nativead/issues"
+  },
+  "homepage": "https://github.com/board-native/blog-widget-nativead#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

@@ -1,0 +1,484 @@
+body, nav, ul, li, a  {margin: 0; padding: 0;}
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #fff !important;
+	max-width: none;
+}
+a {text-decoration: none;}
+.container {
+	max-width:900px;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+.toggleMenu {
+	display:none;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: #33cccc;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.toggleMenu {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: #33cccc;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+	 background-color:transparent;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav a {
+	padding: 10px 15px;
+	/* [disabled]color: #fff; */
+}
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+	color: #33cccc;
+	margin-right: 10px;
+    float: left;
+    border: 1px solid #2a2a3b;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.nav > li:hover {
+	margin-right: 10px;
+	color: #33cccc;
+    float: left;
+    border: 1px solid #33cccc;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+}
+.nav > li > .parent {
+    background-image: url("imgs/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+	display: block;
+	color: #FFFFFF;
+}
+.nav > li > a:hover {
+	display: block;
+	color: #33cccc;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background-color:transparent;
+    position: relative;
+    z-index:100;
+    border: 1px solid #33CCCC;
+}
+
+/*@media screen and (max-width : 926px ){
+	.container {
+    width: 90%;
+    margin:auto;
+}
+    .active {
+        display: block;
+    }
+    .nav > li {
+		
+        float: left;
+		background-color: rgba(42, 42, 59, 0.83);
+		margin-top:2%;
+		width:80%;
+		margin-right:0px;
+		padding:10px;
+		border: 1px solid #2a2a3b;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+		
+		
+    }
+	
+	 .nav > li:hover {
+		float: left;
+		background-color:#2a2a3b;
+		margin-top:2%;
+		width:80%;
+		margin-left:0px;
+		padding:10px;
+		border: 1px solid #33cccc;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+		
+		
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+   .nav {
+        display: block;
+        width: 100%;
+		margin-top:30px;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+		margin-top:30px;
+    }
+  
+
+
+}*/
+
+@media screen and (max-width : 999px ){
+	.container {
+	max-width: 90%px;
+	position: absolute;
+	right: 10px;
+	top: 15px;	
+
+}
+.toggleMenu {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: #33cccc;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+	 background-color:transparent;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav a {
+	padding: 10px 15px;
+	/* [disabled]color: #fff; */
+}
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+	color: #33cccc;
+	margin-right: 10px;
+    float: left;
+    border: 1px solid #2a2a3b;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.nav > li:hover {
+	margin-right: 10px;
+	color: #33cccc;
+    float: left;
+    border: 1px solid #33cccc;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+}
+.nav > li > .parent {
+    background-image: url("imgs/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+	display: block;
+	color: #FFFFFF;
+}
+.nav > li > a:hover {
+	display: block;
+	color: #33cccc;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background-color:transparent;
+    position: relative;
+    z-index:100;
+    border: 1px solid #33CCCC;
+}
+
+}
+
+@media screen and (max-width : 768px ){
+	.container {
+	max-width: 500px;
+	position: absolute;
+	right: 30px;
+	top: 15px;	
+
+}
+.toggleMenu {
+	
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: #33cccc;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+	 background-color:transparent;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav a {
+	padding: 10px 15px;
+	/* [disabled]color: #fff; */
+}
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+	color: #33cccc;
+	margin-right: 10px;
+    float: left;
+    border: 1px solid #2a2a3b;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.nav > li:hover {
+	margin-right: 10px;
+	color: #33cccc;
+    float: left;
+    border: 1px solid #33cccc;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+}
+.nav > li > .parent {
+    background-image: url("imgs/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+	display: block;
+	color: #FFFFFF;
+}
+.nav > li > a:hover {
+	display: block;
+	color: #33cccc;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background-color:transparent;
+    position: relative;
+    z-index:100;
+    border: 1px solid #33CCCC;
+}
+
+}
+@media screen and (max-width : 480px ){
+	.container {
+    width: 90%;
+    margin:auto;
+}
+.toggleMenu {
+    padding: 10px 15px;
+    color: #33cccc;
+	position:absolute;
+	right:-20px;
+	top: -20px;
+}
+    .active {
+        display: block;
+    }
+    .nav > li {
+		
+        float: left;
+		background-color: rgba(42, 42, 59, 0.83);
+		margin-top:4%;
+		width:100%;
+		margin-right:0px;
+		padding:5px;
+		border: 1px solid #2a2a3b;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+		
+		
+    }
+	
+	 .nav > li:hover {
+		float: left;
+		background-color: rgba(42, 42, 59, 0.9);
+		margin-top:4%;
+		width:100%;
+		margin-left:0px;
+		padding:5px;
+		border: 1px solid #33cccc;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+		
+		
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+   .nav {
+        display: block;
+        width: 100%;
+		margin-top:30px;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+		margin-top:30px;
+    }
+  
+
+
+}
+
+
+@media screen and (max-width : 320px ){
+	.container {
+    width: 90%;
+    margin:auto;
+}
+.toggleMenu {
+    padding: 10px 15px;
+    color: #33cccc;
+	position:absolute;
+	right:-20px;
+	top: -20px;
+}
+    .active {
+        display: block;
+    }
+    .nav > li {
+		
+        float: left;
+		background-color:;
+		margin-top:4%;
+		width:100%;
+		margin-right:0px;
+		padding:5px;
+		border: 1px solid #2a2a3b;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+		
+		
+    }
+	
+	.nav > li:hover {
+		float: left;
+		background-color: rgba(42, 42, 59, 0.9);
+		margin-top:4%;
+		width:100%;
+		margin-left:0px;
+		padding:5px;
+		border: 1px solid #33cccc;
+	border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+		
+		
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+   .nav {
+        display: block;
+        width: 100%;
+		margin-top:30px;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+		margin-top:30px;
+    }
+  
+
+
+}
